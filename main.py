@@ -52,5 +52,5 @@ if __name__ == "__main__":
                                                   config['signature_size'],
                                                   config['test_dir'],
                                                   config['log_file'])
-    print(signature)
+    print('\nSignature: ' + str(signature))
     file_searching.search_virus(signature, config['signature_file'], config['search_dir'], config['log_file'])
