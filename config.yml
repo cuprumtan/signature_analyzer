@@ -1,0 +1,10 @@
+# Set directory containing test files for analysis using absolute path.
+test_dir: C:\Users\cuprumtan\PycharmProjects\signature_analyzer\test files
+# Set main directory for searching using absolute path.
+search_dir: C:\Users\cuprumtan\PycharmProjects\signature_analyzer\binary
+# Set file for analysis using absolute path. Or you can set value to "random" for choosing random file from test_dir.
+signature_file: C:\Users\cuprumtan\PycharmProjects\signature_analyzer\test files\HYMN.COM
+# Set signature size. Min value - 32, max value - 256.
+signature_size: 256
+# Set log file using absolute path.
+log_file: C:\Users\cuprumtan\PycharmProjects\signature_analyzer\signature_analyzer.log
