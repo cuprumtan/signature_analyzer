@@ -26,6 +26,10 @@ def get_signature(bigrams_dict, signature_file, signature_size, test_dir, log_fi
         log.write(str(datetime.datetime.now()) + '[WARNING] Tried to exclude signature file: no such file in test_dir\n')
 
     size = os.path.getsize(signature_file)
+    if size < signature_size:
+        print('File size contains less bytes than signature required!')
+        exit(0)
+
     file = open(signature_file, 'rb').read()
 
     etalon_signature = b'\x00'
