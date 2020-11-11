@@ -38,7 +38,7 @@ def get_signature(bigrams_dict, signature_file, signature_size, test_dir, log_fi
         for test_file in test_files:
             if signature in open(test_file, 'rb').read():
                 signature_flag = 1
-        if signature_flag:
+        if not signature_flag:
             # get signature with the smallest total probability
             P = get_signature_P(signature, bigrams_dict)
             if P < etalon_P:
